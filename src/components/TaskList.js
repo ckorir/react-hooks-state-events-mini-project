@@ -1,9 +1,12 @@
 import React from "react";
 
-function TaskList() {
+function TaskList({ children }) {
   return (
     <div className="tasks">
-      {/* display a list of tasks using Task component */}
+      <h5>Tasks</h5>
+      <div className="task-list">
+        {children}
+      </div>
     </div>
   );
 }
